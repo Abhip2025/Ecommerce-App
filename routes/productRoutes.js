@@ -28,7 +28,7 @@ router.post(
   createProductController
 );
 
-// Update product routes
+// Update product routes 
 router.put(
   "/update-product/:pid",
   requireSignIn,

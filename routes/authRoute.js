@@ -8,7 +8,6 @@ import {
   getOrdersController,
   getAllOrdersController,
   orderStatusController,
-  //orderStatusController,
 } from "../controllers/authController.js";
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 
@@ -16,13 +15,13 @@ import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 const router = express.Router();
 
 //routing
-//Register || method posty
+//REGISTER || METHOD POST
 router.post("/register", registerController);
 
-//Login || post
+//LOGIN || POST
 router.post("/login", loginController);
 
-//forgot password \\post
+//Forgot Password || POST
 router.post("/forgot-password", forgotPasswordController);
 
 //test routes

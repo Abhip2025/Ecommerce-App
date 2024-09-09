@@ -17,7 +17,7 @@ const CartPage = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // total price
+  //total price
   const totalPrice = () => {
     try {
       let total = 0;
@@ -100,7 +100,11 @@ const CartPage = () => {
           <div className="row ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
-                <div className="row card flex-row" key={p._id}>
+                <div
+                  className="row card flex-row "
+                  key={p._id}
+                  style={{ width: "42rem" }}
+                >
                   <div className="col-md-4">
                     <img
                       src={`/api/v1/product/product-photo/${p._id}`}
@@ -111,11 +115,13 @@ const CartPage = () => {
                     />
                   </div>
                   <div className="col-md-4">
-                    <p>{p.name}</p>
-                    <p>{p.description.substring(0, 30)}</p>
-                    <p>Price : {p.price}</p>
+                    <p>
+                      <b>{p.name.substring(0, 20)}...</b>
+                    </p>
+                    <p>{p.description.substring(0, 20)}...</p>
+                    <p>Price : ${p.price}</p>
                   </div>
-                  <div className="col-md-5 cart-remove-btn">
+                  <div className="col-md-4 cart-remove-btn">
                     <button
                       className="btn btn-danger"
                       onClick={() => removeCartItem(p._id)}
@@ -126,7 +132,7 @@ const CartPage = () => {
                 </div>
               ))}
             </div>
-            <div className="col-md-3 cart-summary  ">
+            <div className="col-md-5 cart-summary ">
               <h2>Cart Summary</h2>
               <p>Total | Checkout | Payment</p>
               <hr />
