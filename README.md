@@ -12,7 +12,6 @@ An end-to-end full-stack E-commerce website built with modern web technologies. 
   - Orders
   - Users
 - 📦 Inventory Management
-- 📈 Sales Insights
 
 ---
 
