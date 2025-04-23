@@ -14,7 +14,7 @@ const Products = () => {
       setProducts(data.products);
     } catch (error) {
       console.log(error);
-      toast.error("Something Went Wrong");
+      toast.error("Someething Went Wrong");
     }
   };
 
@@ -37,11 +37,15 @@ const Products = () => {
                 to={`/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
-                <div className="card m-2" style={{ width: "18rem" }}>
+                <div
+                  className="card m-2"
+                  style={{ height: "45rem", width: "18rem" }}
+                >
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
+                    height={350}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{p.name}</h5>

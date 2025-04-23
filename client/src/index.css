@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
@@ -54,8 +53,8 @@
 
 .footer {
   color: white;
-  padding: 25px;
-  margin-top: 55px;
+  padding: 50px;
+  margin-top: 0px;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
