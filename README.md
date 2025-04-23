@@ -13,7 +13,9 @@ An end-to-end full-stack E-commerce website built with modern web technologies. 
   - Users
 - 📦 Inventory Management
 
----
+#Overview
+![Screenshot 2025-04-22 220015](https://github.com/user-attachments/assets/52502625-dc14-40ae-a701-6dd713b0a787)
+
 
 ## 🛠️ Tech Stack
 
@@ -35,7 +37,3 @@ An end-to-end full-stack E-commerce website built with modern web technologies. 
 - Cloudinary (for image uploads)  
 - Stripe / Razorpay (for payment integration)  
 - Dotenv (for environment variables)
-
----
-
-## 📁 Folder Structure
